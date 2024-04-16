@@ -13,7 +13,7 @@ public class AwsSesConfig {
     public AmazonSimpleEmailService amazonSimpleEmailService() {
         return AmazonSimpleEmailServiceClientBuilder.standard()
                 .withCredentials(DefaultAWSCredentialsProviderChain.getInstance())
-                .withRegion("#") // Inserir a região da aws.
+                .withRegion("us-east-1") // Inserir a região da aws.
                 .build();
     }
 }
